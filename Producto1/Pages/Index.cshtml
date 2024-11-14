@@ -1,10 +1,52 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Car Dealership - Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="display-4">Welcome to Our Car Dealership</h1>
+            <p class="lead">Browse our inventory of quality used and new vehicles.</p>
+            <a href="/Inventory" class="btn btn-primary btn-lg">View Inventory</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2>Featured Vehicles</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.8f9ee66415f3dcfb026cd296bb7dc0e2?rik=xvbTztrU3lPMpA&pid=ImgRaw&r=0" class="card-img-top" alt="Car 1">
+                <div class="card-body">
+                    <h5 class="card-title">2019 Toyota Camry</h5>
+                    <p class="card-text">Mileage: 45,000 | Price: $18,995</p>
+                    <a href="/VehicleDetails?id=1" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.soXe4op3XPiT7FKF_ESLlgHaFj?rs=1&pid=ImgDetMain" class="card-img-top" alt="Car 2">
+                <div class="card-body">
+                    <h5 class="card-title">2021 Honda Civic</h5>
+                    <p class="card-text">Mileage: 22,000 | Price: $22,500</p>
+                    <a href="/VehicleDetails?id=2" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.6rstElbje0Vx5UsL98WmGwHaEG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Car 3">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Ford F-150</h5>
+                    <p class="card-text">Mileage: 65,000 | Price: $29,995</p>
+                    <a href="/VehicleDetails?id=3" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

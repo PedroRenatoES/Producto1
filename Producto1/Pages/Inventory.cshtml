@@ -1,0 +1,108 @@
+﻿@page
+@model InventoryModel
+@{
+    ViewData["Title"] = "Car Dealership - Inventory";
+}
+
+<div class="container my-5">
+    <h1>Vehicle Inventory</h1>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h3>Filter</h3>
+            <form>
+                <div class="form-group">
+                    <label for="make">Make</label>
+                    <select class="form-control" id="make">
+                        <option value="">All Makes</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model</label>
+                    <select class="form-control" id="model">
+                        <option value="">All Models</option>
+                        <option value="Camry">Camry</option>
+                        <option value="Civic">Civic</option>
+                        <option value="F-150">F-150</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="range" class="form-control-range" id="price" min="10000" max="50000" step="1000">
+                    <output for="price">$20,000</output>
+                </div>
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                        <th>Mileage</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://th.bing.com/th/id/R.8f9ee66415f3dcfb026cd296bb7dc0e2?rik=xvbTztrU3lPMpA&pid=ImgRaw&r=0" alt="Toyota Camry" style="width: 150px; height: 100px;"></td>
+                        <td>Toyota</td>
+                        <td>Camry</td>
+                        <td>2019</td>
+                        <td>45,000</td>
+                        <td>$18,995</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://th.bing.com/th/id/OIP.soXe4op3XPiT7FKF_ESLlgHaFj?rs=1&pid=ImgDetMain" alt="Honda Civic" style="width: 150px; height: 100px;"></td>
+                        <td>Honda</td>
+                        <td>Civic</td>
+                        <td>2021</td>
+                        <td>22,000</td>
+                        <td>$22,500</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://th.bing.com/th/id/OIP.6rstElbje0Vx5UsL98WmGwHaEG?rs=1&pid=ImgDetMain" alt="Ford F-150" style="width: 150px; height: 100px;"></td>
+                        <td>Ford</td>
+                        <td>F-150</td>
+                        <td>2018</td>
+                        <td>65,000</td>
+                        <td>$29,995</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.motortrend.com/uploads/sites/10/2019/11/2020-toyota-rav4-hybrid-limited-4wd-suv-angular-front.png" alt="Toyota RAV4" style="width: 150px; height: 100px;"></td>
+                        <td>Toyota</td>
+                        <td>RAV4</td>
+                        <td>2020</td>
+                        <td>35,000</td>
+                        <td>$25,995</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://th.bing.com/th/id/R.2c72affc2f650dc21f2ca0a10439762d?rik=dwHmdUsOU1IcLg&pid=ImgRaw&r=0" alt="Honda Accord" style="width: 150px; height: 100px;"></td>
+                        <td>Honda</td>
+                        <td>Accord</td>
+                        <td>2017</td>
+                        <td>55,000</td>
+                        <td>$17,995</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/08/ford-mustang-gtd-2024-05.jpg" alt="Ford Mustang" style="width: 150px; height: 100px;"></td>
+                        <td>Ford</td>
+                        <td>Mustang</td>
+                        <td>2019</td>
+                        <td>28,000</td>
+                        <td>$32,995</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
